@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
     <section>
-        <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="ebb08ce0-f2ea-4914-a882-6fe48b51e06d">
-            <input type="text" name="name" placeholder="John Smith" class="contact-inputs" required>
-            <input type="email" name="email" placeholder="johnsmith@example.com" class="contact-inputs"
-                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
-            <textarea name="message" placeholder="Your Message" class=" contact-inputs" required></textarea>
-            <button type="submit">Submit</button>
-            <input type="hidden" name="redirect" value="success.html">
-
+        <h1>SIGN UP TO DEAKIN NEWSLETTER</h1>
+        <form action="/" method="post">
+            <h4>Enter Details Below:</h3>
+            <input type="text" name="first_name" placeholder="First Name">
+            <input type="text" name="last_name" placeholder="Last Name">
+            <input type="email" name="email" placeholder="Email">
+            <button type="submit">Sign Up</button>
         </form>
     </section>
 </body>
-
 </html>
