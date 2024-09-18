@@ -1,0 +1,19 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+.homepage-text{
+    margin: 2rem;
+    font-size: 300%;
+}
+
+.homepage-text a{
+    font-size: 25px;
+}
+
+.homepage-text h4{
+    font-size: 18px;
+}
+
