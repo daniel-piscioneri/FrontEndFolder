@@ -1,0 +1,24 @@
+h1 {
+  color: black;
+  font-size: 17px;
+  padding: 0.5rem;
+}
+
+.nav{
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: rgb(146, 146, 146);
+}
+
+.ui.icon.input {
+  width: 80%;
+}
+
+.nav a {
+  font-size: 17px;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}

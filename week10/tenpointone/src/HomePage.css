@@ -1,0 +1,64 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+.homepage-text{
+    margin: 2rem;
+    font-size: 300%;
+}
+
+.homepage-text a{
+    font-size: 25px;
+}
+
+.homepage-text h4{
+    font-size: 18px;
+}
+
+.three.wide.columns{
+    width: 33% !important;
+}
+
+.ui.inverted.stackable.divided.grid{
+    width: 100% !important;
+}
+
+.email.subscribe.component {
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.email.subscribe.component h1 {
+    color: white;
+}
+
+.email.subscribe.component form {
+    padding-top: 0.5rem;
+}
+
+.ui.inverted.vertical.segment {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+}
+
+.underneath.section{
+    width: 100%;
+}
+
+.under.list{
+    display: flex;
+    flex-direction: row;
+    list-style:upper-roman;
+    gap: 3rem;
+    justify-content: center;
+}
+
+
