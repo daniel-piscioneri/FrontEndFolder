@@ -26,8 +26,11 @@ const SignUp = (props) => {
         })
     }
 
+    const [isSignedIn, setIsSignedIn] = useState(false);
+
     const handleSubmit = async (event) => {
         event.preventDefault();
+        setIsSignedIn(false)
 
         if (password !== confirmPassword) {
             alert("Passwords do not match");
@@ -37,10 +40,17 @@ const SignUp = (props) => {
         try {
             const { user } = await createAuthUserWithEmailAndPassword(email, password);
             await createUserDocFromAuth(user, { displayName })
+            setIsSignedIn(true);
         } catch (error) {
             console.log("error in creating user", error.message);
         }
     }
+
+    if (isSignedIn) {
+        console.log("inside if")
+        return <Navigate to='/login' />
+    }
+
     return <div className="login">
         <div className="inputs">
             <Input name='displayName'

@@ -44,6 +44,7 @@ function Login() {
             setIsLoggedIn(true);
         } catch (error) {
             console.log("error in logging in. ", error.message);
+            alert(error.message);
         }
 
     }

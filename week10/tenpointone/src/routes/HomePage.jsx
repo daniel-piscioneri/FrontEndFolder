@@ -5,6 +5,7 @@ import Input from "../Input"
 import { useState } from "react"
 import Mailgun from 'mailgun.js';
 import formData from 'form-data';
+import {SocialIcon} from 'react-social-icons';
 
 function HomePage() {
     const mailgun = new Mailgun(formData);
@@ -83,8 +84,13 @@ function HomePage() {
                             </div>
                             <div class="three wide columns">
                                 <h4 class="ui inverted header">Stay Connected</h4>
-                                <p>I would have put symbols here but instead i will put a link to a funny youtube video.</p>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">video</a>
+                                {/* for the icons i used react icons and not images as i wanted mine to be dynamic and with the library of react
+                                 this was done using, npm install react-social-icons 
+                                 then I had imported such at the top of the page and then added as follows below.*/}
+                                <SocialIcon url="www.facebook.com"/>
+                                <SocialIcon url="www.x.com"/>
+                                <SocialIcon url="www.instagram.com"/>
+                                <SocialIcon url="www.linkedin.com"/>
                             </div>
                         </div>
                         <div className="underneath section">
